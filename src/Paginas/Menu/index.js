@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
+import './menu.css';
 
 function Menu(){
     return(
@@ -12,7 +13,6 @@ function Menu(){
                         eventos y metodos, components naming,
                         hooks, stateless, stateful */}
                     </BrowserRouter>
-
                 </li>
                 <li>
                     <BrowserRouter>
