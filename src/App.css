@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.cajatipo0{
+  order: 5px outset red;
+  background-color: lightgreen; 
+}
+
+.cajatipo1{
+  order: 5px outset red;
+  background-color: lightblue; 
+}
