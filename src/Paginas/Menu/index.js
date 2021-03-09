@@ -1,68 +1,45 @@
 import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
-import './menu.css';
+import { Link } from 'react-router-dom';
 
 function Menu(){
     return(
         <div>
             <ul>
                 <li>
-                    <BrowserRouter>
-                        <Link to="/basicos">01 Basicos</Link>
-                        {/*jsx, componentes, props, state, 
-                        eventos y metodos, components naming,
-                        hooks, stateless, stateful */}
-                    </BrowserRouter>
+                    <Link to="/basicos">01 Basicos</Link>
+                    {/*jsx, componentes, props, state, 
+                    eventos y metodos, components naming,
+                    hooks, stateless, stateful */}
                 </li>
                 <li>
-                    <BrowserRouter>
-                        <Link to="/cvida">02 Ciclo de Vida</Link>
-                    </BrowserRouter>
+                    <Link to="/cvida">02 Ciclo de Vida</Link>
                 </li>
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">03 Routing</Link>
-                    </BrowserRouter>                        
+                    <Link to="/rutas">03 Routing</Link>
                 </li>                
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">04 Redux</Link>
-                    </BrowserRouter>
+                    <Link to="/rutas">04 Redux</Link>
                 </li>                                
                 <li>
-                    <BrowserRouter>
-                        <Link to="/rutas">05 ReduxToolkit</Link>
-                    </BrowserRouter>
+                    <Link to="/rutas">05 ReduxToolkit</Link>
                 </li>                                
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">06 API Fetch: Axios</Link>
-                    </BrowserRouter>                        
+                    <Link to="/rutas">06 API Fetch: Axios</Link>
                 </li>                                    
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">07 API Fetch: ReactQuery</Link>
-                    </BrowserRouter>                    
+                    <Link to="/rutas">07 API Fetch: ReactQuery</Link>
                 </li>                                         
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">08 CRUD Single Entity</Link>
-                    </BrowserRouter>                    
+                    <Link to="/rutas">08 CRUD Single Entity</Link>
                 </li>                                      
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">09 CRUD OneToMany</Link>
-                    </BrowserRouter>                        
+                    <Link to="/rutas">09 CRUD OneToMany</Link>
                 </li>                                  
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">10 Login</Link>
-                    </BrowserRouter>                        
+                    <Link to="/rutas">10 Login</Link>
                 </li>                         
                 <li>
-                    <BrowserRouter>                    
-                        <Link to="/rutas">11 ShoppingCart</Link>
-                    </BrowserRouter>                        
+                    <Link to="/rutas">11 ShoppingCart</Link>
                 </li>
             </ul>
         </div>
