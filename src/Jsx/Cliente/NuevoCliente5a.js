@@ -15,6 +15,8 @@ const nuevoclientev5 = (props) => {
         <div>
             <p onClick={props.actNombre}>Mi nombre es {props.nombre}, soy un cliente y tengo {props.edad} años<br />
             {props.children}</p>
+            {/*two way binding*/}
+            <input type="text" onChange={props.cambiartxt} value={props.nombre} />
         </div>
     )
     

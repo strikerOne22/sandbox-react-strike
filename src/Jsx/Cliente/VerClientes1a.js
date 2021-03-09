@@ -27,6 +27,16 @@ class verclientes1a extends Component{
         })
     }
 
+    //two way binding
+    actualizarNombresHandler = (event) => {
+        this.setState({
+            persons: [
+                {nombre: event.target.value, edad: 1},
+                {nombre: event.target.value, edad: 33},            
+                {nombre: 'La Lakers', edad: 5}
+            ]
+        })
+    }
 
     render(){
         return(
@@ -40,7 +50,9 @@ class verclientes1a extends Component{
                 <button onClick={this.cambiaNombresHandler}>Switch Name1</button>
                 <Nuevocliente5a 
                 nombre={this.state.persons[0].nombre} 
-                edad={this.state.persons[0].edad}>Equipo: Lakers
+                edad={this.state.persons[0].edad}
+                cambiartxt={this.actualizarNombresHandler}                                
+                >Equipo: Lakers
                 </Nuevocliente5a>
                 
                 {/*El prop actNombre puede ser cualquier otro nombre */}
@@ -48,6 +60,7 @@ class verclientes1a extends Component{
                 nombre={this.state.persons[1].nombre} 
                 edad={this.state.persons[1].edad}
                 actNombre={this.cambiaNombresHandler}
+                cambiartxt={this.actualizarNombresHandler}
                 >Equipo: Pistons
                 </Nuevocliente5a>            
                 
